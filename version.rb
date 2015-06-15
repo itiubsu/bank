@@ -1,5 +1,5 @@
 require 'sqlite3'
 
-db = SQLite3::Database.new ":memory:"
-puts db.get_first_value 'SELECT SQLITE_VERSION()'
-db.close if db
+database = SQLite3::Database.new ":memory:"
+puts database.get_first_value 'SELECT SQLITE_VERSION()'
+database.close if database
